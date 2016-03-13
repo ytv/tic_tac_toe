@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="public/css/app.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="public/js/appview.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="a-board">
+        <div class="a-row">
+            <div class="a-box" data-loc="0,0">
+                <i class="material-icons"></i>
+            </div>
+            <div class="a-box" data-loc="0,1">
+                <i class="material-icons"></i>
+            </div>
+            <div class="a-box" data-loc="0,2">
+                <i class="material-icons"></i>
+            </div>
+        </div>
+        <div class="a-row">
+            <div class="a-box" data-loc="1,0">
+                <i class="material-icons"></i>
+            </div>
+            <div class="a-box" data-loc="1,1">
+                <i class="material-icons"></i>
+            </div>
+            <div class="a-box" data-loc="1,2">
+                <i class="material-icons"></i>
+            </div>
+        </div>
+        <div class="a-row">
+            <div class="a-box" data-loc="2,0">
+                <i class="material-icons"></i>
+            </div>
+            <div class="a-box" data-loc="2,1">
+                <i class="material-icons"></i>
+            </div>
+            <div class="a-box" data-loc="2,2">
+                <i class="material-icons"></i>
+            </div>
+        </div>
+    </div>
+    <div class="a-board-msg">
+        <span></span>
+    </div>
+    <script>
+        $(document).ready(function() {
+            AppView.init();
+        });
+    </script>
+</body>
+</html>
