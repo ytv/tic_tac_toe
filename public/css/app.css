@@ -1,0 +1,64 @@
+/* global */
+html {
+
+}
+body {
+
+}
+
+/* game board */
+.a-board {
+    height: 500px;
+    width: 500px;
+}
+
+.a-board.end {
+    opacity: 0.25;
+}
+
+.a-board-msg {
+    display: none;
+}
+
+.a-board-msg.show {
+    display: block;
+}
+
+.a-row {
+    display: flex; /* removes white space in child inline-block divs */
+    height: 33.33%;
+}
+
+.a-row:nth-child(1), .a-row:nth-child(2) {
+    border-bottom: 2px solid #000000;
+}
+
+.a-box {
+    width: 33.33%;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.a-box:nth-child(1), .a-box:nth-child(2) {
+    border-right: 2px solid #000000;
+}
+
+.a-box.marked {
+    cursor: not-allowed;
+}
+
+.a-box i.a-box-circle:before {
+    display: inline-block;
+    font-size: 120px;
+    margin-top: 20px;
+    content: "\E40C";
+}
+
+.a-box i.a-box-check:before {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 144px;
+    content: "\E14C";
+}
